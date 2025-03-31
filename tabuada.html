@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Simples</title>
+</head>
+<body>
+    <h2>Gerador de Tabuada</h2>
+    <button onclick="gerarTabuada()">Clique para escolher a tabuada</button>
+    <p id="resultado"></p>
+
+    <script>
+        function gerarTabuada() {
+            // Pergunta ao usuário qual tabuada ele deseja ver
+            let numero = prompt("Digite um número para ver a tabuada:");
+
+            // Converte a entrada para número
+            numero = Number(numero);
+
+            let resultado = `<strong>📌 Tabuada do ${numero}:</strong><br>`;
+
+            // Gera a tabuada de 1 a 10
+            for (let i = 1; i <= 10; i++) {
+                resultado += `${numero} x ${i} = ${numero * i} <br>`;
+            }
+
+            // Exibe a tabuada na tela
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

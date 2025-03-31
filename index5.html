@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cadastro de Usuário</h2>
+    <form id="cadastroForm">
+        <label>Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <span class="error" id="erroNome"></span>
+        
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail">
+        <span class="error" id="erroEmail"></span>
+        
+        <label>Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha">
+        <span class="error" id="erroSenha"></span>
+        
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+    <script src="script4.js"></script>
+</body>
+</html>
+
+
+
+
+
