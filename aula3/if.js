@@ -1,5 +1,6 @@
-// Exemplo de if
-let numero = parseInt(prompt("Digite um número:"));
-if (numero > 5) {
-    console.log("O número é maior que 5");
+const idade = 18;
+
+if (idade >= 18) {
+    console.log("Maior de idade");
 }
+// Saída: "Maior de idade"
